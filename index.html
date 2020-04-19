@@ -16,14 +16,14 @@
 	  background-color: #4CAF50;
 	  border: none;
 	  color: white;
-	  padding: 12px 20px;
+
 	  text-align: center;
 	  font-family: HelvetiHand;
 	  text-decoration: none;
 	  display: inline-block;
-	  font-size: 25px;
+	  font-size: 18px;
 	  transition-duration: 0.4s;
-  cursor: pointer;
+	  cursor: pointer;
 	}
 	.button1 {
 	  background-color: white; 
@@ -34,25 +34,52 @@
 	  background-color: #4CAF50; /* Green */
 	  color: white;
 	}
-	.container {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		-moz-transform: translateX(-50%) translateY(-50%);
-		-webkit-transform: translateX(-50%) translateY(-50%);
-		transform: translateX(-50%) translateY(-50%);
+	.floater {
+	  position: fixed;
+      margin: 0;
+      
+      width: auto;
+      height: 75px;
+      z-index: 3;
+	}
+	.floaterNE{
+	  top: 12px;
+      right: 25px;
+	}
+	.floaterNW{
+	  top: 12px;
+      left: 25px;
+	}
+	.floater span {
+	  display: inline-block;
+	  text-align: right;
+	  float: right;
+	  background-color: white;
+	  padding: 7px;
+	  line-height: 1.4;
+	  margin: 8px 15px 8px 0;
+	}
+	.floater img {
+	  left: 0px;
+	  height: 56px;
+	  float: right;
+	  margin: 0px 5px;
 	}
 </style>
 
-<body><center>
+<body>
+	<div class="floater floaterNE">
+		<img src="logotemp.png"/>
+		<span>very ez very fun</span>
+	</div>
+	<div class="floater floaterNW">
+		<span onclick="playAudio()" class="button button1">click me</span>
+	</div>
 	<audio id="myAudio">
 	  <source src="healing.mp3" type="audio/mpeg">
 	  Your browser does not support the audio element.
 	</audio>
-	<div class="container">
-	<button class="button button1" onclick="playAudio()" type="button">click me</button>
-	</div>	
-</center></body>
+</body>
 
 <script>
 var x = document.getElementById("myAudio"); 
