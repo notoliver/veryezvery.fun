@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>very ez very fun</title>
+	<link rel='icon' href='favicon.ico' type='image/ico'>	
+</head>
+
+<style>
+	@font-face { font-family: HelvetiHand; src: url('HelvetiHand.ttf'); }
+	body{
+		background-color:#FDF5E6;
+		font-family: HelvetiHand;
+	}
+	button {
+	  background-color: #4CAF50; /* Green */
+	  border: none;
+	  color: white;
+	  padding: 12px 20px;
+	  text-align: center;
+	  font-family: HelvetiHand;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 25px;
+	}
+	.container {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-moz-transform: translateX(-50%) translateY(-50%);
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		transform: translateX(-50%) translateY(-50%);
+	}
+</style>
+
+<body><center>
+	<audio id="myAudio">
+	  <source src="healing.mp3" type="audio/mpeg">
+	  Your browser does not support the audio element.
+	</audio>
+	<div class="container">
+	<button onclick="playAudio()" type="button">healing</button>
+	</div>	
+</center></body>
+
+<script>
+var x = document.getElementById("myAudio"); 
+x.loop = true;
+
+function playAudio() { 
+  x.play(); 
+} 
+</script>
+
+
+</html>
