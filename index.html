@@ -1,243 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- code based on https://morsels.website/ - i aint tryna infringe on copyrights, just usin some simple html stuff lmk if this is an issue :O -->
+
 <head>
 	<title>very ez very fun</title>
 	<link rel='icon' href='assets/favicon.ico' type='image/ico'>	
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
 </head>
 
-<style>
-	@font-face { font-family: HelvetiHand; src: url('assets/HelvetiHand.ttf'); }
-	body{
-		background-color:#FDF5E6;
-		font-family: HelvetiHand;
-		overflow-y: hidden;
-		overflow-x: auto; 
-	}
+<body>
+	<div class="floater floaterNE">
+		<img src="assets/logotemp.png"/>
+		<span>very ez very fun</span>
+	</div>
 
-	.button{
-	  background-color: #4CAF50;
-	  border: none;
-	  color: white;
-
-	  text-align: center;
-	  font-family: HelvetiHand;
-	  text-decoration: none;
-	  display: inline-block;
-	  font-size: 18px;
-	  transition-duration: 0.4s;
-	  cursor: pointer;
-	}
-	.button1 {
-	  background-color: white; 
-	  color: black; 
-	  border: 2px solid #4CAF50;
-	}
-	.button1:hover {
-	  background-color: #4CAF50; /* Green */
-	  color: white;
-	}
-
-	.floater {
-	  position: fixed;
-	}
-	.floaterNE{
-		top: 12px;
-		right: 25px;
-	}
-	.floaterNW{
-		top: 12px;
-		left: 25px;
-	}
-	.floater span {
-	  text-align: right;
-	  float: right;
-	  background-color: white;
-	  padding: 7px;
-	  line-height: 1.4;
-	  margin: 8px 15px 8px 0;
-	}
-	.floater img {
-	  left: 0px;
-	  height: 56px;
-	  float: right;
-	  margin: 0px 5px;
-	}
-
-	.box {
-		display: flex;
-		height: 100vh;
-		flex-direction: row;
-		align-items: center;
-		justify-content: flex-start;
-		white-space: nowrap;
-		overflow: visible;
-		margin: 0;
-		
-	}	
-	.entry {
-		height: auto;
-		width: 650px;
-		display: flex;
-		flex-direction: row;
-		justify-content: flex-start;
-		margin: 0 150px;
-		position: relative;
-		padding: 0px;
-		
-	}
-	.art {
-		display: block;
-		width: 	100%;
-		height: auto;
-		background: white;
-		border: 4px solid white;
-		width: 450px;
-		height: 450px;
-		float:left;
-		margin: 0 10px 0 0;
-	}
-	.info {
-		width: auto;
-		margin: 0 0 0 10px;
-		padding: 0 0px 0 0; /* actually a margin lol */
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-		align-items: flex-start;	
-		font-size: 16px;
-	}
-	.text {
-		display: inline-block;
-		background: white;
-		padding: 4px 6px;
-	}
-	.gap {
-		margin-top: 7px;
-	}
-	.links {
-		margin-top: 40px;
-		align-self: flex-start;
-	}
-</style>
-
-<body onload=parseURL()>
 	<div class="box">
-		<div class="entry" id="4">
+		<div class="rcrd">
 			<img class="art" src="assets/lyingfinal.png"/>
 			<div class="info">
 				<span class="text">Sounds For Being: Lying</span>
 				<span class="text">Oliver Qiu</span>
 				<span class="gap"></span>
-				<span class="text">April 22, 2020</span>				
+				<span class="text">April 22, 2020</span>
+				<span class="text words">the first installment of the <br>"Sounds For Being" series, <br>enjoy just being sometimes</span>			
 				<div class="links">
 					<a href="https://open.spotify.com/album/1znKNp6PioN5TNphh0PzOy?si=_lY96A76QY2xzo5mo5EYQw" target="_blank"><span class="text">Spotify</span></a>
 					<a href="https://youtu.be/9C7I07VrMXA" target="_blank"><span class="text">Youtube</span></a>
 					<br>
 					<a href="https://oliverqiu.bandcamp.com/album/sounds-for-being-lying" target="_blank"><span class="text gap">Bandcamp (free dl)</span></a>
 				</div>	
-				<span class="text links">the first installment of the <br>"Sounds For Being" series, <br>enjoy just being sometimes</span>
 			</div>
 		</div>
-		<!--
-		<div class="entry" id="3">
-			<img class="art" src="assets/distancing.png"/>
-			<div class="info">
-				Distancing
-			</div>
-		</div>
-		<div class="entry" id="2">
-			<img class="art" src="assets/senseofself.png"/>
-			<div class="info">
-				Sense of Self
-			</div>
-		</div>
-		-->
-		<div class="entry" id="1">
+		<div class="rcrd">
 			<img class="art" src="assets/somethings.png"/>
 			<div class="info">
 				<span class="text">Some Things</span>
 				<span class="text">Oliver Qiu</span>
 				<span class="gap"></span>
 				<span class="text">February 21, 2020</span>
+				<span class="text words">just some things 🙂 50%<br>off coupons included</span>
 				<div class="links">
 					<a href="https://open.spotify.com/album/2tFGjJnS6bbF6d1qwuRS2k" target="_blank"><span class="text">Spotify</span></a>
 					<a href="https://youtu.be/rXamErE6taE" target="_blank"><span class="text">Youtube</span></a>
 					<br>
 					<a href="https://oliverqiu.bandcamp.com/album/some-things" target="_blank"><span class="text gap">Bandcamp (free dl)</span></a>
 				</div>
-				<span class="text links">just some things 🙂 50%<br>off coupons included</span>
 			</div>
 		</div>
 	</div>
-
-	<div class="floater floaterNE">
-		<img src="assets/logotemp.png"/>
-		<span>very ez very fun</span>
-	</div>
-	
-	<audio id="myAudio">
-		<source src="assets/healing.mp3" type="audio/mpeg">
-	  </audio>
-	<div class="floater floaterNW">
-		
-	</div>
-	
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script type="text/javascript" src="slick/slick.min.js"></script>
-
-	<script>	
-	var x = document.getElementById("myAudio"); 
-	x.loop = true;
-
-	function playAudio() { 
-	  x.play();
-	} 
-
-	const slider = $(".box");
-	slider.slick({
-				variableWidth: true,
-				infinite: false,
-				slidesToShow: 1,
-				slidesToScroll: 1,	
-				focusOnSelect: true,
-				centerMode: true,
-				arrows: false,
-				speed: 275,
-				waitForAnimate: false
-		});
-	slider.on('wheel', (function(e) {
-		e.preventDefault();
-		if (e.originalEvent.deltaY < 0) {
-			$(this).slick('slickPrev');
-		} else {
-			$(this).slick('slickNext');
-		}
-	}));
-
-	var releases = ["sfb_lying","distancing", "senseofself", "somethings",];
-	
-	function parseURL() {
-		var url = window.location.href;
-		if(url.indexOf("#")==-1){
-			return;
-		}
-		var urlAux = url.split('#');
-		var r = releases.indexOf(urlAux[1]);
-		console.log(r);
-		slider[0].slick.slickGoTo(r);
-		window.history.replaceState( {} , "very ez very fun", urlAux[0] );
-	}
-	</script>
-
 </body>
-
-
-
-
 
 </html>
