@@ -1,4 +1,4 @@
-function what(){
+function chat(){
     var input = document.getElementById('myText').value;
     document.getElementById('myText').value='';
     var d = new Date();
@@ -9,6 +9,9 @@ function what(){
     var currentSeconds = d.getSeconds();
     currentSeconds = ("0" + currentSeconds).slice(-2);
     var time = currentHours+':'+currentMinutes+':'+currentSeconds;
-    console.log('writing');
-    document.getElementById('box').innerHTML+='<p>'+time+' '+input+'<\/p>';
+    document.getElementById('chat').innerHTML+='<p>'+time+' '+input+'<\/p>';
 }
+
+$(function() {
+    $('.window').draggable({ handle:'.header'});
+});

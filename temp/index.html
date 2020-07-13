@@ -7,18 +7,25 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="temp.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src='temp.js'></script>
 </head>
 
 <body>
-	<div class='ok'>
-		<div class='box' ><div id='box'></div></div>
+	<div class='window' id='window'>
+		<div class='header'>hello</div>
+		<div class='box' id='box'>
+			<div class='chat' id='chat'></div>
+		</div>
 		<div class='menu'>
-			<form onsubmit="what();return false">
+			<form onsubmit="chat();return false">
 				<input type="text" id="myText" placeholder="what" autocomplete=off>
 			</form>
 		</div>
 	</div>
-	<script src='temp.js'></script>
+	
 </body>
 
 </html>

@@ -3,16 +3,19 @@ body{
     color: black;
     text-align:center;
 }
-.ok{
-    margin-top: 30px;
+.window{
     background-color: #fffaf0;
     outline-style:solid;
     height:600px;
     max-width:95%;
     width:600px;
-    display:inline-block;
     text-align:left;
     outline-width:1px;
+    top:123px;
+    left:240px;
+    position:absolute;
+    resize: both;
+    overflow: hidden;
 }
 .box{
     margin: 10px;
@@ -27,7 +30,25 @@ body{
 }
 .menu{
     margin: 0 10px;
-    
+    height:10%;
     outline-width:1px;
     text-align:center;
+}
+.header{
+    cursor:move;
+    outline-width:1px;
+    padding:2px;
+    text-align:center;
+    background-color: #e9e4d9;
+}
+/*  ~ ~ ~ switch ~ ~ ~ */
+
+@media screen and (max-width: 800px) { /*768px*/
+    .window{
+        position:relative;
+        top:0;
+        left:0;
+        right:0;
+        margin: auto;
+    }
 }
