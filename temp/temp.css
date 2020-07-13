@@ -1,0 +1,33 @@
+body{
+    background-color: #eae0c8;
+    color: black;
+    text-align:center;
+}
+.ok{
+    margin-top: 30px;
+    background-color: #fffaf0;
+    outline-style:solid;
+    height:600px;
+    max-width:95%;
+    width:600px;
+    display:inline-block;
+    text-align:left;
+    outline-width:1px;
+}
+.box{
+    margin: 10px;
+    padding-left:10px;
+    height:80%;
+    outline-style:solid;
+    outline-width:1px;
+    overflow-y: scroll;
+    background-color: #fffafa;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.menu{
+    margin: 0 10px;
+    
+    outline-width:1px;
+    text-align:center;
+}
