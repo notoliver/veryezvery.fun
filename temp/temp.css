@@ -1,6 +1,5 @@
 body{
     background-color: #eae0c8;
-    color: black;
     text-align:center;
 }
 .window{
@@ -11,11 +10,13 @@ body{
     width:600px;
     text-align:left;
     outline-width:1px;
-    top:123px;
-    left:240px;
-    position:absolute;
+    margin: 0 auto;
+    position:relative;
     resize: both;
     overflow: hidden;
+    -webkit-box-shadow: 4px 4px 10px 0px rgba(112,112,112,1);
+    -moz-box-shadow: 4px 4px 10px 0px rgba(112,112,112,1);
+    box-shadow: 4px 4px 10px 0px rgba(112,112,112,1);
 }
 .box{
     margin: 10px;
@@ -40,6 +41,9 @@ body{
     padding:2px;
     text-align:center;
     background-color: #e9e4d9;
+}
+.time{
+    font-family: "Courier New", Courier, monospace;
 }
 /*  ~ ~ ~ switch ~ ~ ~ */
 
