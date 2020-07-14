@@ -24,7 +24,7 @@ function joined(){
     document.getElementById('chat').innerHTML+='<p>'+getTime()+' <i>i joined the chatroom<\/i><\/p>';
 }
 
-var lines = ['hello','hi','what is this','lol','why','who','i mean','ok','umm','awkward','stop please','ok bye','lmao'];
+var lines = ['hello','hi','what is this','lol','why','who','i mean','ok','umm','awkward','stop please','ok bye','lmao','what?'];
 var names = ['john','mary','matt','liam','sophia','amelia','logan','mason','lucas','elijah','james','emma','evelyn'];
 var lastUsedLine =''
 
@@ -32,7 +32,7 @@ function crowd(){
     var decision = Math.floor(Math.random() * 8);
     var input;
     if(decision==0 && userInput.length!=0){
-        input = "\""+userInput[Math.floor(Math.random() * userInput.length)]+"\" ok...?";
+        input = "\""+userInput[Math.floor(Math.random() * userInput.length)]+"\" ok and?";
     }
     else{
         input = lines[Math.floor(Math.random() * lines.length)];
