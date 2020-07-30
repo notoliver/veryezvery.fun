@@ -41,9 +41,9 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin: 0 150px;
+    margin: 0 130px;
     position: relative;
-    padding: 0px;
+    padding-right:20px;
 }
 .art {
     display: block;
