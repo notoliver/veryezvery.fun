@@ -1,6 +1,29 @@
+@font-face { font-family: HelvetiHand; src: url('../assets/HelvetiHand.ttf'); }
 body{
     background-color: #eae0c8;
     text-align:center;
+}
+.floater {
+    position: fixed;
+    font-family: HelvetiHand;
+}
+.floaterNE{
+    top: 12px;
+    right: 25px;
+}
+.floater span {
+    text-align: right;
+    float: right;
+    background-color: white;
+    padding: 7px;
+    line-height: 1.4;
+    margin: 8px 15px 8px 0;
+}
+.floater img {
+    left: 0px;
+    height: 56px;
+    float: right;
+    margin: 0px 5px;
 }
 .window{
     background-color: #fffaf0;
@@ -49,8 +72,8 @@ body{
 
 @media screen and (max-width: 800px) { /*768px*/
     .window{
-        position:relative;
-        top:0;
+        position:fixed;
+        top:80px;
         left:0;
         right:0;
         margin: auto;

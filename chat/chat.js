@@ -24,8 +24,6 @@ function joined(){
     document.getElementById('chat').innerHTML+='<p>'+getTime()+' <i>i joined the chatroom<\/i><\/p>';
 }
 
-var lines = ['hello','hi','what is this','lol','why','who','i mean','ok','umm','awkward','stop please','ok bye','lmao','what?'];
-var names = ['john','mary','matt','liam','sophia','amelia','logan','mason','lucas','elijah','james','emma','evelyn'];
 var lastUsedLine =''
 
 function crowd(){
@@ -55,3 +53,5 @@ $(function() {
     setTimeout(joined,120)
     setTimeout(myFunction,100*(Math.floor(Math.random() * (70 - 30 + 1)) + 30));
 });
+
+console.log(chatters.placeholder1.attributes.angry);
