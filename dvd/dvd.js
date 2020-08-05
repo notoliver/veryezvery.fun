@@ -35,7 +35,45 @@ function dvd() {
 		posX+=accelX; 
 		elem.style.left = posX + "px"; 
 	}
-  }
+}
+
+function changeAccel(ok){
+	var bud;
+	if(ok=='up'){
+		if(Math.abs(accelX*2)>100){
+			return;
+		}
+		bud=1.2;
+	}
+	if(ok=='down'){
+		if(Math.abs(accelX*0.8)<0.1){
+			return;
+		}
+		bud=0.8;
+	}
+	accelX*=bud;
+	accelY*=bud;
+}
+function reset(){
+	posX = 1;
+	posY = 1;
+	accelX = 1;
+	accelY = 1;
+}
+function hide(){
+	var floater = document.getElementById('floater');
+	var controls = document.getElementById('controls');
+	if (floater.style.display === "none") {
+		floater.style.display = "block";
+	} else {
+		floater.style.display = "none";
+	}
+	if (controls.style.display === "none") {
+		controls.style.display = "block";
+	} else {
+		controls.style.display = "none";
+	}
+}
 
 document.addEventListener('DOMContentLoaded', function() {
     dvd();
@@ -45,38 +83,15 @@ document.addEventListener('keydown', function(event) {
 	const key = event.key;
 	//console.log(key);
     if (key === "ArrowUp") {
-		if(Math.abs(accelX*2)>100){
-			return;
-		}
-		accelX*=1.2;
-		accelY*=1.2;
+		changeAccel('up');
     }
     if (key === "ArrowDown") {
-		if(Math.abs(accelX*2)<0.1){
-			return;
-		}
-        accelX*=0.8;
-		accelY*=0.8;
+		changeAccel('down');
 	}
 	if (key === "Enter"){
-		posX = 1;
-		posY = 1;
-		accelX = 1;
-		accelY = 1;
+		reset();
 	}
 	if (key === "Backspace"){
-		var floater = document.getElementById('floater');
-		var controls = document.getElementById('controls');
-		if (floater.style.display === "none") {
-			floater.style.display = "block";
-		} else {
-			floater.style.display = "none";
-		}
-		if (controls.style.display === "none") {
-			controls.style.display = "block";
-		} else {
-			controls.style.display = "none";
-		}
+		hide();	
 	}
-	console.log(accelX +' '+ accelY);
 });
