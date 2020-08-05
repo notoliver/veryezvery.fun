@@ -1,5 +1,6 @@
 @font-face { font-family: HelvetiHand; src: url('../assets/HelvetiHand.ttf'); }
 html, body {
+    font-family: HelvetiHand;
     background: #000;
     color: #fff;
     height: 100%;
@@ -18,7 +19,7 @@ svg {
     display: block;
 }
 .floater {
-    font-family: HelvetiHand;
+    display:block;
     color: black;
 }
 .floater svg {
@@ -26,4 +27,7 @@ svg {
     height: 56px;
     float: right;
     margin: 0px 5px;
+}
+.controls{
+    display:block;
 }
