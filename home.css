@@ -1,0 +1,95 @@
+@font-face { font-family: HelvetiHand; src: url('assets/HelvetiHand.ttf'); }
+
+body{
+    background-color:#FDF5E6;
+    font-family: HelvetiHand;
+    overflow-y:hidden;
+}
+.box {
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    white-space: nowrap;
+    overflow: visible;
+    margin: 0;
+}	
+.rcrd {		
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0 130px;
+    position: relative;
+    padding-right:20px;
+}
+.art {
+    display: block;
+    width: 	100%;
+    height: auto;
+    background: white;
+    border: 4px solid white;
+    width: 450px;
+    height: 450px;
+    float:left;
+    margin: 0 10px 0 0;
+}
+.info {
+    margin: 0 0 0 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;	
+    font-size: 16px;
+}
+.text {
+    display: inline-block;
+    background: white;
+    padding: 4px 6px;
+}
+.gap {
+    margin-top: 7px;
+}
+.links {
+    margin-top: 40px;
+}
+.links .text:hover{
+    opacity:70%;
+}
+.words{
+    margin-top: 40px;
+}
+
+/*  ~ ~ ~ switch ~ ~ ~ */
+
+@media screen and (max-width: 800px) { /*768px*/
+    body{
+        overflow-y:auto;
+    }
+    .box {
+        flex-direction: column;
+    }
+    .rcrd {
+        flex-direction: column;
+        margin-top:70px;
+        margin-bottom:10px;
+        width:90%;
+        max-width:450px;
+    }
+    .art{
+        margin: 0 auto;
+        width:100%;
+        height:auto;
+        max-width:450px;
+    }
+    .info{
+        margin: 5px 0 0 0;
+    }
+    .links{
+        margin-top:10px;
+        align-self: flex-end;
+    }
+    .words{
+        margin-top:10px;
+    }
+}

@@ -1,0 +1,22 @@
+.floater {
+    position: fixed;
+}
+.floaterNE{
+    top: 12px;
+    right: 25px;
+}
+.floater span {
+    text-align: right;
+    float: right;
+    background-color: white;
+    padding: 7px;
+    line-height: 1.4;
+    margin: 8px 15px 8px 0;
+    color: black;
+}
+.floater img {
+    left: 0px;
+    height: 56px;
+    float: right;
+    margin: 0px 5px;
+}

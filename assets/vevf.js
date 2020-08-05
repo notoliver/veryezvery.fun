@@ -1,9 +1,10 @@
-var paths = ['/','/chat/']
+var paths = ['/','/chat/','/dvd/']
+
 function randomLink(){
-    //var rando = Math.round(Math.random()*1);
-    var newPath = paths[Math.round(Math.random()*1)];
-    while(newPath==window.location.pathname){
-        newPath = paths[Math.round(Math.random()*1)];
+    var current=paths.indexOf(window.location.pathname);
+    current++;
+    if(current==paths.length){
+        current=0;
     }
-    window.location.pathname=newPath;
+    window.location.pathname=paths[current];
 }
