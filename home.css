@@ -92,4 +92,7 @@ body{
     .words{
         margin-top:10px;
     }
+    .floater {
+        position: absolute;
+    }
 }
