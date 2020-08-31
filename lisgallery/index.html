@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>lisgallery</title>
+	<link rel='icon' href='../assets/favicon.ico' type='image/ico'>	
+
+	<meta name='viewport' content='width=device-width, initial-scale=0.9, shrink-to-fit=no'>
+	<meta charset='utf-8'>
+	<link rel='stylesheet' type='text/css' href='galleries.css'>
+	<link rel='stylesheet' type='text/css' href='site.css'>
+	<script src='fade.js'></script>
+</head>
+
+<body>
+	<svg id='fader'></svg>
+	<script>fadeInPage();</script>
+
+	<div id='myModal' class='modal'>
+		<span class='close cursor' onclick='closeModal()'>&times;</span>
+		<div id='modal-content' num='9' class='modal-content'></div>
+	</div>
+	<div class='wrapper'></div>
+
+	<script src='ImageGrid.js'></script>
+	<script src='bootstrap.js'></script>
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+	<script src='lightbox.js'></script>
+
+	<script>
+		function resizeShit(){
+			var stuff = document.querySelectorAll('.mySlides > img');
+			var w = window.innerWidth;
+			var h = window.innerHeight;
+			if(w>h){//constant height
+				for(var i=0;i<stuff.length;i++){
+					stuff[i].style.width='auto';
+					stuff[i].style.height=h-100+'px';
+				}
+			}
+			if(h>w){//constant width
+				for(var i=0;i<stuff.length;i++){
+					stuff[i].style.height='auto';
+					stuff[i].style.width=w-20+'px';
+				}
+			}
+		}
+		resizeShit();
+		$(window).on('resize', function(){
+			resizeShit();
+			$.getScript('bootstrap.js');
+			$.getScript('ImageGrid.js');
+		});
+		//testing, at steps? too heavy? wierd with google debugger resizing, not window
+	</script>
+</body>
+
+</html>
