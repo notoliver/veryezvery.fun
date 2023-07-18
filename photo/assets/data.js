@@ -242,3 +242,15 @@ var oliver = [
         height: '10px'
     }
 ]
+
+var about = [
+    
+    {
+        module: 'spacer',
+        height: '10px'
+    },
+    {
+        module: 'description',
+        text: 'pictures taken by <a href=\'https://www.minsuhchung.com/\' target="_blank" style="color:black;">minsuh chung</a> and <a href=\'https://oliverqiu.cool/\' target="_blank" style="color:black;">oliver qiu</a>'
+    }
+]
