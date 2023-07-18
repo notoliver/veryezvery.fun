@@ -392,14 +392,15 @@
 }
 /* captions */
 .modules .caption{
-    color: rgba(255, 255, 255, 0.87);
+    color: rgba(0, 0, 0, 0.87);
     font-style: normal;
-    font-family: NotFont;
+    font-family: font;
+    font-size:15px;
 	margin-top:5px;
 }
 .modules .caption a{
-	color: rgba(189, 189, 189, 0.87);
-    text-decoration:none;
+	color: rgba(0, 0, 0, 0.685);
+    text-decoration:underline;
 }
 .modules .caption a:hover{
 	opacity:0.8;
